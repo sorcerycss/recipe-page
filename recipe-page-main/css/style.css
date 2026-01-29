@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+}
+
+img {
+    display: block;
+    height: 100px;
+}
+
+h1,
+h2 {
+    font-family: 'Young Serif', sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(122, 69, 8);
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Preparation */
+.preparation {
+    background-color: rgb(255, 235, 242);
+    margin: 20px 0;
+    padding: 10px 5px;
+    border-radius: 6px;
+}
+
+.preparation-title {
+    font-weight: 600;
+    color: rgb(105, 24, 105);
+    margin: 10px 0;
+}
+
+.preparation-list {
+    padding: 0 15px;
+}
+
+.preparation-list-item {
+    font-size: 10px;
+    padding: 3px 0;
+}
+
+/* Ingredients */
+.ingredients {
+    border-bottom: 1px solid gray;
+}
+
+.ingredients-title {
+    margin: 0 0 15px;
+}
+
+.ingredients-list {
+    margin: 0 0 20px;
+    padding: 0 15px 0;
+}
+
+.ingredients-list-item {
+    font-size: 10px;
+    padding: 3px 0;
+}
+
+/* Instructions */
+.instructions {
+    border-bottom: 1px solid gray;
+}
+
+.instructions-title {
+    margin: 10px 0 15px;
+}
+
+.instructions-list {
+    margin: 0 0 20px;
+    padding: 0 15px 0;
+}
+
+.instructions-list-item {
+    font-size: 10px;
+    padding: 3px 0;
+}
