@@ -1,15 +1,27 @@
+/* 
+  Recipe Page - Main Stylesheet
+  Status: Work in Progress / Initial Submission
+
+  Note: Completed without Figma access (free plan).
+  Spacing, typography and colors are approximated.
+  Refactor planned with exact design values later.
+*/
+
 * {
+    box-sizing: border-box;
     margin: 0;
 }
 
 body {
     font-family: 'Outfit', sans-serif;
     font-size: 12px;
+    /* overflow-x: hidden; */
 }
 
 img {
+    width: 100%;
     display: block;
-    height: 100px;
+    /* height: 100px; */
 }
 
 h1,
@@ -27,12 +39,25 @@ h1 {
 h2 {
     font-size: 14px;
     font-weight: 400;
-    color: rgb(122, 69, 8);
+    color: #7a2e1e;
+}
+
+.card {
+    background: #fff;
 }
 
 .container {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
+}
+
+/* Hero */
+.hero-section {}
+
+.hero-title {}
+
+.hero-text {
+    color: #5c5c5c;
 }
 
 /* Preparation */
@@ -91,7 +116,75 @@ h2 {
     padding: 0 15px 0;
 }
 
+.instructions-list-item::marker {
+    color: #7a2e1e;
+    font-weight: 600;
+}
+
 .instructions-list-item {
+    color: #5c5c5c;
     font-size: 10px;
     padding: 3px 0;
+}
+
+.instructions-label {
+    color: black;
+    font-weight: 600;
+}
+
+/* Nutrition */
+.nutrition {}
+
+.nutrition-title {
+    margin-top: 15px;
+}
+
+.nutrition-text {
+    margin-top: 10px;
+    line-height: 1.3;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nutrition-table tr {
+    border-bottom: .5px solid gray;
+}
+
+.nutrition-table tr:last-child {
+    border-bottom: 0;
+}
+
+.nutrition-table td {
+    padding: 0.75rem 1.5rem;
+}
+
+.nutrient-name {
+    color: #5c5c5c;
+}
+
+.nutrient-value {
+    color: #7a2e1e;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    body {
+        background: #e8ddd4;
+        padding: 80px 0;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* min-height: 100vh; */
+    }
+
+    .card {
+        max-width: 700px;
+        border-radius: 16px;
+        padding: 2em;
+        margin: 0 auto;
+    }
 }
