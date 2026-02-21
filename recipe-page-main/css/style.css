@@ -46,8 +46,9 @@ h2 {
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    padding: 2em;
 }
 
 /* Hero */
@@ -111,6 +112,7 @@ h2 {
 
 .ingredients-list-item {
     font-size: 0.625rem;
+    color: #5c5c5c;
     padding: 5px 0 5px 20px;
 }
 
@@ -130,7 +132,7 @@ h2 {
 
 .instructions-list-item::marker {
     color: #7a2e1e;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .instructions-list-item {
@@ -198,10 +200,22 @@ h2 {
     }
 
     .card {
-        max-width: 900px;
+        /* border: 1px solid rebeccapurple; */
+        max-width: 800px;
         margin: 0 auto;
         border-radius: 20px;
-        padding: 2em;
+        padding: 0;
+    }
+
+    .image-container {
+        /* border: 1px solid rebeccapurple; */
+        padding: 2em 2em 0 2em;
+    }
+
+    .container {
+        /* border: 1px solid rebeccapurple; */
+        width: 100%;
+        padding: 0 2em 2em 2em;
     }
 
     img {
@@ -210,10 +224,17 @@ h2 {
 
     h1 {
         font-size: 2.25rem;
+        margin: 40px 0;
     }
 
     h2 {
         font-size: 1.75rem;
+    }
+
+    .ingredients-title,
+    .instructions-title,
+    .nutrition-title {
+        margin: 20px 0;
     }
 
     .preparation {
