@@ -14,14 +14,13 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     /* overflow-x: hidden; */
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     display: block;
-    /* height: 100px; */
 }
 
 h1,
@@ -30,14 +29,14 @@ h2 {
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1;
     margin: 20px 0;
 }
 
 h2 {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     color: #7a2e1e;
 }
@@ -62,15 +61,15 @@ h2 {
 
 /* Preparation */
 .preparation {
-    background-color: rgb(255, 235, 242);
+    background-color: #FFEBF2;
     margin: 20px 0;
-    padding: 10px 5px;
+    padding: 10px 15px;
     border-radius: 6px;
 }
 
 .preparation-title {
     font-weight: 600;
-    color: rgb(105, 24, 105);
+    color: #691869;
     margin: 10px 0;
 }
 
@@ -78,9 +77,18 @@ h2 {
     padding: 0 15px;
 }
 
+.preparation-list-item::marker {
+    color: #691869;
+}
+
 .preparation-list-item {
-    font-size: 10px;
-    padding: 3px 0;
+    font-size: 0.625rem;
+    margin: 0 15px 0;
+    padding: 5px 0 5px 15px;
+}
+
+.preparation-label {
+    font-weight: 600;
 }
 
 /* Ingredients */
@@ -94,12 +102,16 @@ h2 {
 
 .ingredients-list {
     margin: 0 0 20px;
-    padding: 0 15px 0;
+    padding: 0 30px 0;
+}
+
+.ingredients-list-item::marker {
+    color: #7a2e1e;
 }
 
 .ingredients-list-item {
-    font-size: 10px;
-    padding: 3px 0;
+    font-size: 0.625rem;
+    padding: 5px 0 5px 20px;
 }
 
 /* Instructions */
@@ -113,7 +125,7 @@ h2 {
 
 .instructions-list {
     margin: 0 0 20px;
-    padding: 0 15px 0;
+    padding: 0 30px 0;
 }
 
 .instructions-list-item::marker {
@@ -124,7 +136,9 @@ h2 {
 .instructions-list-item {
     color: #5c5c5c;
     font-size: 10px;
-    padding: 3px 0;
+    /* padding: 3px 0; */
+    padding-left: 20px;
+    margin: 10px 0;
 }
 
 .instructions-label {
@@ -140,8 +154,9 @@ h2 {
 }
 
 .nutrition-text {
-    margin-top: 10px;
+    font-size: 1rem;
     line-height: 1.3;
+    margin-top: 10px;
 }
 
 .nutrition-table {
@@ -173,6 +188,7 @@ h2 {
 
 @media (min-width: 768px) {
     body {
+        font-size: 1.5rem;
         background: #e8ddd4;
         padding: 80px 0;
         /* display: flex;
@@ -182,9 +198,40 @@ h2 {
     }
 
     .card {
-        max-width: 700px;
-        border-radius: 16px;
-        padding: 2em;
+        max-width: 900px;
         margin: 0 auto;
+        border-radius: 20px;
+        padding: 2em;
+    }
+
+    img {
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .preparation {
+        padding: 1em;
+    }
+
+    .preparation-list-item {
+        font-size: 1.125rem;
+    }
+
+    .instructions-list-item {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+
+    .ingredients-list-item,
+    .instructions-list-item,
+    .nutrition-table {
+        font-size: 1rem;
     }
 }
